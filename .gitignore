@@ -1,4 +1,8 @@
 videos/*
+!videos/.gitkeep
+
 out/*
+!out/.gitkeep
+
 temp/*
 .DS_Store
