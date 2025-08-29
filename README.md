@@ -72,10 +72,10 @@ ffmpeg -encoders | grep -E "libsvtav1|libaom-av1"
 Put your sources in `./videos/`.
 
 ```bash
-python3 2mpeg_dash.py                 # reads ./videos, writes ./out
-python3 2mpeg_dash.py --max-height 1440         # drop 2160p from the ladder
-python3 2mpeg_dash.py --seg 4 --audio-bitrate 192k
-python3 2mpeg_dash.py --av1-encoder svt --cpu-used 8  # faster AV1 on Apple Silicon
+python3 main.py                                 # reads ./videos, writes ./out
+python3 main.py --max-height 1440               # drop 2160p from the ladder
+python3 main.py --seg 4 --audio-bitrate 192k
+python3 main.py --av1-encoder svt --cpu-used 8  # faster AV1 on Apple Silicon
 ```
 
 ### CLI options
