@@ -1,0 +1,4 @@
+videos/*
+out/*
+temp/*
+.DS_Store
